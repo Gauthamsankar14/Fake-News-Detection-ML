@@ -1,0 +1,288 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #00bfff;
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    min-height: 60px;
+    width: 100%;
+    background-color: red;
+    border-top: 1px solid black !important;
+    position: absolute;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.first{
+    
+    background-color:#00bfff;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+
+}
+.first h1
+{
+    color:#fff;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-left: 42%;
+
+}
+
+
+#main {
+    padding-top: 63px;
+}
+
+.head-git{
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 244, 244);
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 5px;
+  }
+  .head-git h2 {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+  }
+  .head-git h2 a { 
+    text-decoration: none;
+    color:blue;
+    font-size: 23px;
+  }
+  .head-git h2 a:hover { 
+    color:rgb(211, 47, 41);
+    background-color: beige;
+  }
+  
+.head {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+    padding-left: 20px;
+    letter-spacing: 0.5px;
+    padding-bottom: 24px;
+
+}
+.head1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+    padding-left: 20px;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+.wrapper {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #000066;
+}
+.wrapper .item {
+    height: 300px;
+    min-width: 30%;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    padding: 0.5px;
+    flex-flow: column wrap;
+    border-bottom: 1px white;
+}
+.wrapper .item img {
+    height: 100%;
+    width: 100%;
+}
+.c-box {
+    height: content;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-flow: column;
+    padding: 1px;
+} 
+.c-box .content {
+    height: content;
+    min-width: 30%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.c-box .content p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.7px;
+}
+.c-box .content h2 {
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.7px;
+}
+.head-f{
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+    background-color: yellow;
+    display: flex;
+    flex-flow: column;
+  }
+  .head-f h2 {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+  }
+.rty{
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    
+}
+
+
+.rty .left,
+.rty .right {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rty .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.25s ease all;
+}
+
+
+.dt {
+    background: url('/static/87.jpg');
+    
+}
+
+
+.ct {
+    background: url('/static/456.jpg');
+    
+}
+
+
+
+.rty .caption {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+}
+
+
+.rty .caption h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-bottom:1em;
+}
+
+
+.rty .caption .button {
+    background: #000;
+    color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.25s ease all;
+}
+
+
+.rty .caption .button:hover {
+    background: #ffd346;
+    color: #000;
+}
+
+
+.rty .side::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.515) 0%, rgba(0, 0, 0, 0.192) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: '';
+    display: block;
+}
+
+
+.rty .left:hover .image,
+.rty .right:hover .image {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width:1200px) {
+
+    .rty {
+          display: flex;
+    }
+
+
+    .rty .left,
+    .rty .right {
+          width: 50%;
+          height: 100vh;
+    }
+
+}
