@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  
+    <div class = "first">
+        <h1>News-App</h1>
+    </div>
+    <div class="rty">
+
+        <div class="side left">
+              <div class="image dt"></div>
+              <div class="caption">
+                    <a class="button" target="_blank" href="{{ url_for('index') }}">Detect Fake News</a>
+              </div>
+        </div>
+
+        <div class="side right">
+              <div class="image ct"></div>
+              <div class="caption">
+                    <a class="button" onclick="scrollDown()">Latest News</a>
+              </div>
+        </div>
+    </div>
+
+
+<section id="main">
+    <div class = "head">TODAY'S TOP HEADLINES</div>
+    {% for title,desc,img,p_date,url in contents %}
+    <div class="wrapper">
+        <div class="item"><a href="{{url}}" target="_blank"><img src="{{img}}"></a></div>
+        <div class = "c-box">
+        <div class="content"><a href="{{url}}" target="_blank"><h2>{{title}}</h2></a></div>
+        <div class="content"><a href="{{url}}" target="_blank"><p>{{desc}}</p></a></div>
+        <div class="content"><p style="color:rgb(77, 255, 0);">Publish Date:- </p><p>{{p_date}}</p></div>
+        </div>
+        </div> 
+    {% endfor %}  
+    
+    <div class = "head1">TODAY'S NEWS</div>
+    {% for title,desc,img,p_date,url in all %}
+    <div class="wrapper">
+        <div class="item"><a href="{{url}}"><img src="{{img}}"></a></div>
+        <div class = "c-box">
+        <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
+        <div class="content"><p>{{desc}}</p></div>
+        <div class="content"><p style="color:rgb(77, 255, 0);">Publish Date:- </p><p> {{p_date}} </p></div>
+        </div>
+        </div> 
+    {% endfor %}
+</section>
+<footer>
+
+<div class="head-f"><h2> Copyright &copy; News App</h2></div>
+</footer>
+<script>
+    function scrollDown(){
+        window.scrollBy(0,800);
+    }
+</script>
+</body>
+</html>
